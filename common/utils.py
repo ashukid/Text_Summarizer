@@ -1,9 +1,10 @@
 import tiktoken
+from fastapi import UploadFile
 
-def read_text_from_file(file):
+def read_text_from_file(file: UploadFile):
     return file.file.read().decode()
 
-def break_up_file_to_chunks(file, chunk_size=2000, overlap=100):
+def break_up_file_to_chunks(file: UploadFile, chunk_size: int = 2000, overlap: int = 100):
 
     text = read_text_from_file(file)
 

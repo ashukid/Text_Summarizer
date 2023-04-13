@@ -1,0 +1,5 @@
+1. Input and Output models
+2. Proper exception handling
+3. Experiment with models to find the optimal model
+4. Experiment with prompt 
+5. Chat vs Text 
