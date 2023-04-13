@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+
+openai
+tiktoken
+
+python-dotenv
+python-multipart
