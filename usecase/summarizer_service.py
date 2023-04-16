@@ -9,7 +9,7 @@ from common.externals import openai_text_completion
 async def consolidate_summary(prompt_response: str):
     print("\nConsolidating the summary for each chunk")
     start_time = time()
-    prompt_request = "Consoloidate these meeting summaries in no less than 150 words and no more than 400 words : \n\n" + str(prompt_response)
+    prompt_request = "Consolidate these meeting summaries in no less than 150 words and no more than 400 words : \n\n" + str(prompt_response)
     response = await openai_text_completion(prompt_request)
     end_time = time()
     print(f"Total time taken to consolidate summaries : {end_time-start_time} Seconds\n")
